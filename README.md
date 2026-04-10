@@ -17,7 +17,7 @@ Each skill folder contains:
 
 | Skill | Target Project | Description |
 |-------|---------------|-------------|
-| [evm-add-wallet-adapter](./tronwallet-adapter/evm-add-wallet-adapter/) | [tronwallet-adapter](https://github.com/tronprotocol/tronwallet-adapter) | Add a new EVM-compatible wallet adapter end-to-end: requirements → plan → implementation → tests → registration → docs → demo integration |
+| [evm-add-wallet-adapter](./tronwallet-adapter/evm-add-wallet-adapter/) | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Add a new EVM-compatible wallet adapter end-to-end: requirements → plan → implementation → tests → registration → docs → demo integration |
 
 ## How to Use
 
