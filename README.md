@@ -18,6 +18,7 @@ Each skill folder contains:
 | Skill | Target Project | Description |
 |-------|---------------|-------------|
 | [evm-add-wallet-adapter](./tronwallet-adapter/evm-add-wallet-adapter/) | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Add a new EVM-compatible wallet adapter end-to-end: requirements → plan → implementation → tests → registration → docs → demo integration |
+| [wallet-e2e-testing](./tronwallet-adapter/wallet-e2e-testing/) | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Automated E2E wallet testing with Playwright + mock provider injection: connect, sign, switch chain, events — 41 tests across EVM & TRON adapters |
 
 ## How to Use
 
@@ -41,21 +42,30 @@ Each `SKILL.md` is also a perfectly good human-readable runbook. Follow the phas
 skills/
 ├── README.md                          # This file
 └── tronwallet-adapter/                # Skills for the tronwallet-adapter project
-    └── evm-add-wallet-adapter/        # Add a new EVM wallet adapter
-        ├── SKILL.md                   # Workflow definition
-        └── references/                # Templates and guides
-            ├── code-adapter.md
-            ├── code-metadata.md
-            ├── code-mock-provider.md
-            ├── code-package-json.md
-            ├── code-tests.md
-            ├── code-tsconfig.md
-            ├── code-utils.md
-            ├── code-vitest.md
-            ├── demo-integration.md
-            ├── docs-readme.md
-            ├── plan-template.md
-            └── require-template.md
+    ├── evm-add-wallet-adapter/        # Add a new EVM wallet adapter
+    │   ├── SKILL.md                   # Workflow definition
+    │   └── references/                # Templates and guides
+    │       ├── code-adapter.md
+    │       ├── code-metadata.md
+    │       ├── code-mock-provider.md
+    │       ├── code-package-json.md
+    │       ├── code-tests.md
+    │       ├── code-tsconfig.md
+    │       ├── code-utils.md
+    │       ├── code-vitest.md
+    │       ├── demo-integration.md
+    │       ├── docs-readme.md
+    │       ├── plan-template.md
+    │       └── require-template.md
+    └── wallet-e2e-testing/            # Automated E2E wallet testing
+        ├── README.md                  # Detailed usage & architecture docs
+        ├── SKILL.md                   # Skill definition for AI agents
+        ├── references/                # Mock provider specs & templates
+        │   ├── evm-mock-provider.md
+        │   ├── tron-mock-provider.md
+        │   └── add-new-wallet.md
+        └── scripts/
+            └── run-tests.sh           # One-command test runner
 ```
 
 ## Contributing

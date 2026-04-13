@@ -1,6 +1,6 @@
 # evm-add-wallet-adapter
 
-An AI-agent skill for adding a new **EVM-compatible wallet adapter** to the [tronwallet-adapter](https://github.com/tronprotocol/tronwallet-adapter) monorepo — from requirements gathering to demo integration.
+An AI-agent skill for adding a new **EVM-compatible wallet adapter** to the [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) monorepo — from requirements gathering to demo integration.
 
 ## Overview
 
@@ -18,7 +18,7 @@ This skill encodes a proven 7-phase workflow that produces a complete, productio
 
 | | |
 |---|---|
-| **Repository** | [tronprotocol/tronwallet-adapter](https://github.com/tronprotocol/tronwallet-adapter) |
+| **Repository** | [tronweb3/tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) |
 | **Package location** | `packages/adapters/evm/<wallet-name>/` |
 | **Tech stack** | TypeScript, Vitest, pnpm workspaces |
 | **Build outputs** | ESM, CJS, TypeScript declarations, UMD |
@@ -27,7 +27,7 @@ This skill encodes a proven 7-phase workflow that produces a complete, productio
 
 - Node.js >= 16
 - pnpm >= 7
-- A cloned copy of the [tronwallet-adapter](https://github.com/tronprotocol/tronwallet-adapter) monorepo
+- A cloned copy of the [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) monorepo
 
 ## Usage
 
