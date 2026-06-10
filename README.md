@@ -18,6 +18,7 @@ Each skill folder contains:
 | Skill | Target Project | Description |
 |-------|---------------|-------------|
 | [evm-add-wallet-adapter](./tronwallet-adapter/evm-add-wallet-adapter/) | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Add a new EVM-compatible wallet adapter end-to-end: requirements → plan → implementation → tests → registration → docs → demo integration |
+| [tron-add-wallet-adapter](./tronwallet-adapter/tron-add-wallet-adapter/) | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Add a new TRON (native chain) wallet adapter end-to-end: requirements → provider archetype decision → implementation → tests → registration → docs → demo integration |
 | [wallet-e2e-testing](./tronwallet-adapter/wallet-e2e-testing/) | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Automated E2E wallet testing with Playwright + mock provider injection: connect, sign, switch chain, events — 41 tests across EVM & TRON adapters |
 
 ## How to Use
@@ -52,6 +53,26 @@ skills/
     │       ├── code-tests.md
     │       ├── code-tsconfig.md
     │       ├── code-utils.md
+    │       ├── code-vitest.md
+    │       ├── demo-integration.md
+    │       ├── docs-readme.md
+    │       ├── plan-template.md
+    │       └── require-template.md
+    ├── tron-add-wallet-adapter/       # Add a new TRON (native chain) wallet adapter
+    │   ├── SKILL.md                   # Workflow definition
+    │   ├── README.md                  # Usage & conventions guide
+    │   └── references/                # Templates and guides
+    │       ├── archetype-decision.md
+    │       ├── code-adapter-provider-style.md
+    │       ├── code-adapter-tronlink-style.md
+    │       ├── code-mock-provider-style.md
+    │       ├── code-mock-tronlink-style.md
+    │       ├── code-package-json.md
+    │       ├── code-tests-provider-style.md
+    │       ├── code-tests-tronlink-style.md
+    │       ├── code-tsconfig.md
+    │       ├── code-utils-provider-style.md
+    │       ├── code-utils-tronlink-style.md
     │       ├── code-vitest.md
     │       ├── demo-integration.md
     │       ├── docs-readme.md
