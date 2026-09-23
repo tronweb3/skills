@@ -8,17 +8,19 @@ A **skill** is a structured set of instructions and templates that an AI coding 
 
 Each skill folder contains:
 
-| File | Purpose |
-|------|---------|
-| `SKILL.md` | Main workflow definition — phases, variable substitution table, checklist |
-| `references/` | Code templates, doc templates, and integration guides |
+| File          | Purpose                                                                   |
+| ------------- | ------------------------------------------------------------------------- |
+| `SKILL.md`    | Main workflow definition — phases, variable substitution table, checklist |
+| `references/` | Code templates, doc templates, and integration guides                     |
 
 ## Available Skills
 
-| Skill | Target Project | Description |
-|-------|---------------|-------------|
-| [evm-add-wallet-adapter](./tronwallet-adapter/evm-add-wallet-adapter/) | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Add a new EVM-compatible wallet adapter end-to-end: requirements → plan → implementation → tests → registration → docs → demo integration |
-| [wallet-e2e-testing](./tronwallet-adapter/wallet-e2e-testing/) | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Automated E2E wallet testing with Playwright + mock provider injection: connect, sign, switch chain, events — 41 tests across EVM & TRON adapters |
+| Skill                                                                    | Target Project                                                       | Description                                                                                                                                                            |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [evm-add-wallet-adapter](./tronwallet-adapter/evm-add-wallet-adapter/)   | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Add a new EVM-compatible wallet adapter end-to-end: requirements → plan → implementation → tests → registration → docs → demo integration                              |
+| [tron-add-wallet-adapter](./tronwallet-adapter/tron-add-wallet-adapter/) | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Add a new native TRON wallet adapter end-to-end: provider research → requirements → plan → implementation → tests → registration → docs → demo integration             |
+| [wallet-e2e-testing](./tronwallet-adapter/wallet-e2e-testing/)           | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Automated E2E wallet testing with Playwright + mock provider injection: connect, sign, switch chain, events — 41 tests across EVM & TRON adapters                      |
+| [audit-logic-bugs](./tronwallet-adapter/audit-logic-bugs/)               | [tronwallet-adapter](https://github.com/tronweb3/tronwallet-adapter) | Audit a package or directory for semantic defects — lifecycle, async cleanup, state-machine and cancellation bugs — reporting only findings reproduced by running code |
 
 ## How to Use
 
@@ -57,15 +59,32 @@ skills/
     │       ├── docs-readme.md
     │       ├── plan-template.md
     │       └── require-template.md
-    └── wallet-e2e-testing/            # Automated E2E wallet testing
-        ├── README.md                  # Detailed usage & architecture docs
-        ├── SKILL.md                   # Skill definition for AI agents
-        ├── references/                # Mock provider specs & templates
-        │   ├── evm-mock-provider.md
-        │   ├── tron-mock-provider.md
-        │   └── add-new-wallet.md
-        └── scripts/
-            └── run-tests.sh           # One-command test runner
+    ├── tron-add-wallet-adapter/       # Add a new native TRON wallet adapter
+    │   ├── README.md                  # Detailed usage & design notes
+    │   ├── SKILL.md                   # Workflow definition
+    │   └── references/                # Templates and guides
+    │       ├── detection-patterns.md
+    │       ├── code-adapter.md
+    │       ├── code-utils.md
+    │       ├── code-package-json.md
+    │       ├── code-tests.md
+    │       ├── code-tsconfig.md
+    │       ├── code-vitest.md
+    │       ├── demo-integration.md
+    │       ├── docs-readme.md
+    │       ├── plan-template.md
+    │       └── require-template.md
+    ├── wallet-e2e-testing/            # Automated E2E wallet testing
+    │   ├── README.md                  # Detailed usage & architecture docs
+    │   ├── SKILL.md                   # Skill definition for AI agents
+    │   ├── references/                # Mock provider specs & templates
+    │   │   ├── evm-mock-provider.md
+    │   │   ├── tron-mock-provider.md
+    │   │   └── add-new-wallet.md
+    │   └── scripts/
+    │       └── run-tests.sh           # One-command test runner
+    └── audit-logic-bugs/              # Audit code for lifecycle/state-machine logic bugs
+        └── SKILL.md                   # Skill definition for AI agents
 ```
 
 ## Contributing
